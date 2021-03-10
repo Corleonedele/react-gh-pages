@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.practice1{
+    margin: 0;
+    padding: 0;
+    height: 80vh;
+    width: 80vh;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.practice1 > h1{
+    font-size: 6em;
+    font-weight: 500;
+    color: #222;
+    letter-spacing: 5px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.practice1 > h1 span{
+    transition: 0.5s;
+}
+
+.practice1 > h1:hover span:nth-child(1){
+    margin-right: 10px;
+}
+.practice1 > h1:hover span:nth-child(1)::after{
+    content: "'";
+}
+.practice1 > h1:hover span:nth-child(2){
+    margin-right: 10px;
+}
+.practice1 > h1:hover span:nth-child(3){
+    margin-left: 40px;
+}
+.practice1 > h1:hover span{
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+                0 0 30px #fff,
+                0 0 60px #fff,
+                0 0 120px #fff,
+                0 0 140px #fff;
+}
+
+
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+    padding: 10px 15px;
+}
+nav a{
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 19px;
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+nav a:hover {
+    background-color: #ecf0f1;
+    color: #222;
+}
+nav a.active {
+    color: #fff;
+}
+
+.content{
+    padding: 0;
+    margin: 0;
+    min-height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#section1 {
+    background-size: cover;
+    height: 150vh;
+    align-items: center;
+}
+
+#section2 {
+    background-size: cover;
+    height: 130vh;
+    align-items: center;
+}
+#section3 {
+    background-size: cover;
+    height: 90vh;
+    align-items: center;
+}
+
+
+
+section h1{
+    color: #fff;
+    font-size: 8vh;
+    text-align: center;
+}
+section p{
+    color: #fff;
+    font-size: 4vh;
+    max-width: 70%;
+    text-align: center;
+}
+
+.change{
+    transition: 3s;
+    -webkit-transition: 3s;
+}
+
+.not_shown {
+    opacity: 0;
+    /* background-color: red; */
+}
+
+.shown {
+    opacity: 1;
+    /* background-color: yellow; */
+}
+
