@@ -1,5 +1,8 @@
 import React from 'react'
 import "./page.css"
+import image1 from "../images/image1.jpg"
+import image2 from "../images/image2.jpg" 
+
 
 export default function Page() {
     const [ clssname, setClassName ] = React.useState("not_shown")
@@ -63,6 +66,7 @@ export default function Page() {
                         I'm happy to make friends with you
                         </p>
                     </div>
+                    
                 </div>
             </section>
 
@@ -71,14 +75,57 @@ export default function Page() {
                     <p></p>
                     <h1>LOVE MY LIFE</h1>
                 </div>
+                <div className='imgContainer'>
+                    <div className='card'>
+                        <div className='imgBox'></div>
+                        <div className='imgBoxDetails'>
+                            <img src= {image1}></img>
+                            <img src= {image2}></img>
+                            <div className='boxContent'>
+                                <h2>Here I Am <br/><span>Test 1</span></h2>
+                                <div className='socialIcons'>
+                                    <a href='#'></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             </section>
+
+            
 
             <section id='section3'>
                 <div id='listen3' className={`change ${clssname}`}>
                     <div className='content'>                    
                         <h1>CONTACT ME</h1>
                         <p>Phone: +86 11011910086</p>
-                        <p>Email: 1291683680@qq.com</p>
+                        <a href='11011910086@qq.com'>Email Me</a>
                     </div>
 
                 </div>
